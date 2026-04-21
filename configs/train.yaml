@@ -1,0 +1,19 @@
+model:
+  name: densenet121
+  img_size: 224
+
+training:
+  batch_size: 16
+  lr: 0.0001
+  max_steps: 200
+  log_every: 20
+  num_workers: 0
+
+data:
+  image_root: data/raw/downloads/CheXpert-v1.0-small/CheXpert-v1.0-small
+  train_csv: data/processed/train_5labels_fixed.csv
+  valid_csv: data/processed/valid_5labels_fixed.csv
+
+experiment:
+  checkpoint_name: best.pt
+  metrics_name: metrics_step200.json

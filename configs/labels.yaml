@@ -1,0 +1,14 @@
+labels:
+  - Atelectasis
+  - Cardiomegaly
+  - Consolidation
+  - Edema
+  - Pleural Effusion
+
+label_policy:
+  positive: 1
+  negative: 0
+  uncertain: -1
+
+baseline_uncertain_handling:
+  strategy: map_to_negative   # treat -1 as 0

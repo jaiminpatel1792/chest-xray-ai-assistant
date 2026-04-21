@@ -1,0 +1,17 @@
+project:
+  name: chexpert-mlops
+  seed: 42
+
+paths:
+  data_raw: data/raw
+  data_processed: data/processed
+  models: models
+  reports: reports
+
+train:
+  image_size: 224
+  batch_size: 16
+  num_workers: 0
+  epochs: 1
+  lr: 0.0003
+  backbone: resnet18

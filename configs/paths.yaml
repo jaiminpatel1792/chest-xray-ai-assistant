@@ -1,0 +1,5 @@
+dataset:
+  name: chexpert-v1.0-small
+  image_root: data/raw/downloads/CheXpert-v1.0-small/CheXpert-v1.0-small
+  train_csv: data/processed/train_5labels_fixed.csv
+  valid_csv: data/processed/valid_5labels_fixed.csv
